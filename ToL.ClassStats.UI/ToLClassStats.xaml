@@ -1,0 +1,224 @@
+﻿<Window x:Class="ToL.ClassStats.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        mc:Ignorable="d"
+        Title="Throne of Lies Class Statistics" Height="1080" Width="1920" Loaded="Maximize">
+    <Grid Background="#FF2D2D30">
+        <Label Content="Blue Dragon" FontSize="22" Margin="10,10,0,0"/>
+
+        <Label Content="Butler:" Margin="10,53,0,0"/>
+        <Label x:Name="lblButlerTotal" Margin="140,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Butler" Margin="235,53,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblButlerPercent" Margin="290,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Chronomancer:" Margin="10,96,0,0"/>
+        <Label x:Name="lblChronomancerTotal" Margin="140,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Chronomancer" Margin="235,96,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblChronomancerPercent" Margin="290,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Court Wizard:" Margin="10,139,0,0"/>
+        <Label x:Name="lblCourtWizardTotal" Margin="140,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="CourtWizard" Margin="235,139,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblCourtWizardPercent" Margin="290,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Drunk:" Margin="10,182,0,0"/>
+        <Label x:Name="lblDrunkTotal" HorizontalContentAlignment="Center" Margin="140,182,0,0" Width="90"/>
+        <Button x:Name="Drunk" Margin="235,182,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblDrunkPercent" Margin="290,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Hunter:" Margin="10,225,0,0"/>
+        <Label x:Name="lblHunterTotal" HorizontalContentAlignment="Center" Margin="140,225,0,0" Width="90"/>
+        <Button x:Name="Hunter" Margin="235,225,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblHunterPercent" Margin="290,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Knight:" Margin="10,268,0,0"/>
+        <Label x:Name="lblKnightTotal" HorizontalContentAlignment="Center" Margin="140,268,0,0" Width="90"/>
+        <Button x:Name="Knight" Margin="235,268,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblKnightPercent" Margin="290,268,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Maid:" Margin="10,311,0,0"/>
+        <Label x:Name="lblMaidTotal" HorizontalContentAlignment="Center" Margin="140,311,0,0" Width="90"/>
+        <Button x:Name="Maid" Margin="235,311,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblMaidPercent" Margin="290,311,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Mystic:" Margin="10,354,0,0"/>
+        <Label x:Name="lblMysticTotal" HorizontalContentAlignment="Center" Margin="140,354,0,0" Width="90"/>
+        <Button x:Name="Mystic" Margin="235,354,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblMysticPercent" Margin="290,354,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Noble:" Margin="10,397,0,0"/>
+        <Label x:Name="lblNobleTotal" HorizontalContentAlignment="Center" Margin="140,397,0,0" Width="90"/>
+        <Button x:Name="Noble" Margin="235,397,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblNoblePercent" Margin="290,397,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Observer:" Margin="10,440,0,0"/>
+        <Label x:Name="lblObserverTotal" HorizontalContentAlignment="Center" Margin="140,440,0,0" Width="90"/>
+        <Button x:Name="Observer" Margin="235,440,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblObserverPercent" Margin="290,440,0,0" HorizontalContentAlignment="Center" Width="94"/>
+
+        <Label Content="Paladin:" Margin="10,483,0,0"/>
+        <Label x:Name="lblPaladinTotal" HorizontalContentAlignment="Center" Margin="140,483,0,0" Width="90"/>
+        <Button x:Name="Paladin" Margin="235,483,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblPaladinPercent" Margin="290,483,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Physician:" Margin="10,526,0,0"/>
+        <Label x:Name="lblPhysicianTotal" HorizontalContentAlignment="Center" Margin="140,526,0,0" Width="90"/>
+        <Button x:Name="Physician" Margin="235,526,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblPhysicianPercent" Margin="290,526,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Prince:" Margin="10,569,0,0"/>
+        <Label x:Name="lblPrinceTotal" HorizontalContentAlignment="Center" Margin="140,569,0,0" Width="90"/>
+        <Button x:Name="Prince" Margin="235,569,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblPrincePercent" Margin="290,569,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Princess:" Margin="10,612,0,0"/>
+        <Label x:Name="lblPrincessTotal" HorizontalContentAlignment="Center" Margin="140,612,0,0" Width="90"/>
+        <Button x:Name="Princess" Margin="235,612,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblPrincessPercent" Margin="290,612,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Sheriff:" Margin="10,655,0,0"/>
+        <Label x:Name="lblSheriffTotal" HorizontalContentAlignment="Center" Margin="140,655,0,0" Width="90"/>
+        <Button x:Name="Sheriff" Margin="235,655,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblSheriffPercent" Margin="290,655,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Unseen" FontSize="22" Margin="385,10,0,0"/>
+
+        <Label Content="Assassin:" Margin="385,53,0,0"/>
+        <Label x:Name="lblAssassinTotal" Margin="515,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Assassin" Margin="610,53,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblAssassinPercent" Margin="665,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Mastermind:" Margin="385,96,0,0"/>
+        <Label x:Name="lblMastermindTotal" Margin="515,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Mastermind" Margin="610,96,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblMastermindPercent" Margin="665,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Cult" FontSize="22" Margin="760,10,0,0"/>
+
+        <Label Content="Apostle:" Margin="760,53,0,0"/>
+        <Label x:Name="lblApostleTotal" Margin="890,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Apostle" Margin="985,53,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblApostlePercent" Margin="1040,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Cult Leader:" Margin="760,96,0,0"/>
+        <Label x:Name="lblCultLeaderTotal" Margin="890,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="CultLeader" Margin="985,96,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblCultLeaderPercent" Margin="1040,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Invoker:" Margin="760,139,0,0"/>
+        <Label x:Name="lblInvokerTotal" Margin="890,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Invoker" Margin="985,139,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblInvokerPercent" Margin="1040,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Ritualist:" Margin="760,182,0,0"/>
+        <Label x:Name="lblRitualistTotal" Margin="890,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Ritualist" Margin="985,182,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblRitualistPercent" Margin="1040,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Seeker:" Margin="760,225,0,0"/>
+        <Label x:Name="lblSeekerTotal" Margin="890,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Seeker" Margin="985,225,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblSeekerPercent" Margin="1040,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Neutral" FontSize="22" Margin="1135,10,0,0"/>
+
+        <Label Content="Alchemist:" Margin="1135,53,0,0"/>
+        <Label x:Name="lblAlchemistTotal" Margin="1265,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Alchemist" Margin="1360,53,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblAlchemistPercent" Margin="1415,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Fool:" Margin="1135,96,0,0"/>
+        <Label x:Name="lblFoolTotal" Margin="1265,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Fool" Margin="1360,96,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblFoolPercent" Margin="1415,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Inquisitor:" Margin="1135,139,0,0"/>
+        <Label x:Name="lblInquisitorTotal" Margin="1265,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Inquisitor" Margin="1360,139,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblInquisitorPercent" Margin="1415,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Mercenary:" Margin="1135,182,0,0"/>
+        <Label x:Name="lblMercenaryTotal" Margin="1265,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Mercenary" Margin="1360,182,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblMercenaryPercent" Margin="1415,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Possessor:" Margin="1135,225,0,0"/>
+        <Label x:Name="lblPossessorTotal" Margin="1265,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Possessor" Margin="1360,225,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblPossessorPercent" Margin="1415,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Pretender:" Margin="1510,53,0,0"/>
+        <Label x:Name="lblPretenderTotal" Margin="1640,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Pretender" Margin="1735,53,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblPretenderPercent" Margin="1790,53,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Reaper:" Margin="1510,96,0,0"/>
+        <Label x:Name="lblReaperTotal" Margin="1640,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Reaper" Margin="1735,96,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblReaperPercent" Margin="1790,96,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Scorned:" Margin="1510,139,0,0"/>
+        <Label x:Name="lblScornedTotal" Margin="1640,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Scorned" Margin="1735,139,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblScornedPercent" Margin="1790,139,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Sellsword:" Margin="1510,182,0,0"/>
+        <Label x:Name="lblSellswordTotal" Margin="1640,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Sellsword" Margin="1735,182,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblSellswordPercent" Margin="1790,182,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Sorcerer:" Margin="1510,225,0,0"/>
+        <Label x:Name="lblSorcererTotal" Margin="1640,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+        <Button x:Name="Sorcerer" Margin="1735,225,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblSorcererPercent" Margin="1790,225,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="King" FontSize="22" Margin="10,698,0,0"/>
+
+        <Label Content="Blue Dragon:" Margin="10,741,0,0"/>
+        <Label x:Name="lblBlueDragonKingTotal" HorizontalContentAlignment="Center" Margin="140,741,0,0" Width="90"/>
+        <Button x:Name="BlueDragonKing" Margin="235,741,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblBlueDragonKingPercent" Margin="290,741,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Unseen:" Margin="10,784,0,0"/>
+        <Label x:Name="lblUnseenKingTotal" HorizontalContentAlignment="Center" Margin="140,784,0,0" Width="90"/>
+        <Button x:Name="UnseenKing" Margin="235,784,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblUnseenKingPercent" Margin="290,784,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Cult:" Margin="10,827,0,0"/>
+        <Label x:Name="lblCultKingTotal" HorizontalContentAlignment="Center" Margin="140,827,0,0" Width="90"/>
+        <Button x:Name="CultKing" Margin="235,827,0,0" Click="ClassButton_Click"/>
+        <Label x:Name="lblCultKingPercent" Margin="290,827,0,0" HorizontalContentAlignment="Center" Width="90"/>
+
+        <Label Content="Total Games:" Margin="10,870,0,0"/>
+        <Label x:Name="lblTotalGames" HorizontalContentAlignment="Center" Margin="140,870,0,0" Width="90"/>
+
+        <lvc:CartesianChart x:Name="ccClassGraph" Series="{Binding SeriesCollection}" Margin="395,270,25,25">
+            <lvc:CartesianChart.Resources>
+                <Style TargetType="lvc:DefaultTooltip">
+                    <Setter Property="ShowSeries" Value="False"></Setter>
+                </Style>
+            </lvc:CartesianChart.Resources>
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="Class" Labels="{Binding Labels}" LabelsRotation="20" FontSize="12">
+                    <lvc:Axis.Separator>
+                        <lvc:Separator IsEnabled="False" Step="1"></lvc:Separator>
+                    </lvc:Axis.Separator>
+                </lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Times Played" FontSize="12"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+        </lvc:CartesianChart>
+
+        <Button Content="Class History" Margin="10,913,0,0"  Width="125" Click="Class_History_Clicked"/>
+        <Button Content="Match History" Margin="140,913,0,0"  Width="125" Click="Match_History_Clicked" />
+        
+        <Button Content="Random #" Margin="10,956,0,0"  Width="125" Click="Random_Clicked" />
+        <Label x:Name="lblRandomNumber" HorizontalContentAlignment="Center" Margin="140,956,0,0" Width="125"/>
+        
+        <CheckBox x:Name="chkMilestoneView" Content="Milestone View" HorizontalAlignment="Left" Margin="430,1012,0,0" VerticalAlignment="Top" Checked="chkMilestoneView_Checked" Unchecked="chkMilestoneView_Unchecked"/>
+    </Grid>
+</Window>

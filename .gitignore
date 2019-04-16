@@ -332,3 +332,8 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+ToL.ClassStats.BL.Test/App.config
+ToL.ClassStats.BL/App.config
+ToL.ClassStats.PL.Test/App.config
+ToL.ClassStats.PL/App.Config
+ToL.ClassStats.UI/App.config
